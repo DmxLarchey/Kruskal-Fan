@@ -1,5 +1,4 @@
 
-# base.v is either implem/prop.v implem/type.v
 base/base.v
 base/base_implem.v
 
