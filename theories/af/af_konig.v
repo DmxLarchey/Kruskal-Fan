@@ -23,7 +23,6 @@ Import ListNotations idx_notations vec_notations.
 Set Implicit Arguments.
 
 (* good R on the reverse of a vector gives a good pair in the vector *)
-
 #[local] Fact good_rev_vec_list X (R : rel₂ X) n (v : vec X n) :
        good R (rev (vec_list v)) → ∃ i j, idx2nat i < idx2nat j ∧ R v⦃i⦄ v⦃j⦄.
 Proof.

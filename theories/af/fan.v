@@ -13,9 +13,6 @@ From Coq
 From KruskalTrees
   Require Import tactics list_utils.
 
-From KruskalFinite
-  Require Import finite.
-
 Require Import base.
 
 Import ListNotations.
@@ -37,7 +34,10 @@ Section FAN_theorem.
       which was designed with ACL2.
 
       In particular, we completely avoid using an explicit
-      computation of the FAN like "list_fan" above
+      computation of the FAN like 
+
+          list_fan : list (list X) → list (list X)
+
       and instead work directly with the FAN predicate. *)
 
   Variables (X : Type) (P : rel₁ (list X)) (HP : monotone P).
@@ -92,3 +92,5 @@ Section FAN_theorem.
   Qed.
 
 End FAN_theorem.
+
+Check FAN_theorem.
