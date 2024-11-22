@@ -11,7 +11,7 @@
 
 # Kruskal-Fan
 
-This project is based on [`Kruskal-Trees`](https://github.com/DmxLarchey/Kruskal-Trees), 
+This project is for Coq `8.14+` and is based on [`Kruskal-Trees`](https://github.com/DmxLarchey/Kruskal-Trees), 
 [`Kruskal-Finite`](https://github.com/DmxLarchey/Kruskal-Finite) 
 and [`Kruskal-AlmostFull`](https://github.com/DmxLarchey/Kruskal-AlmostFull), and
 it implements two additional results related to monotone inductive bars.
