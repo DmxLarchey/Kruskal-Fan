@@ -32,7 +32,7 @@
         "König's lemma"
     ],
     "license": "https://spdx.org/licenses/MPL-2.0",
-    "name": "Karp-Miller",
+    "name": "Kruskal-Fan",
     "operatingSystem": [
         "Linux",
         "MacOS"
