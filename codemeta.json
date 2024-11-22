@@ -27,12 +27,12 @@
     "isPartOf": "https://github.com/DmxLarchey/Coq-Kruskal",
     "keywords": [
         "coq",
-        "rose trees",
         "dependent types",
-        "Kruskal tree theorem"
+        "Fan theorem",
+        "König's lemma"
     ],
     "license": "https://spdx.org/licenses/MPL-2.0",
-    "name": "Kruskal-Fan",
+    "name": "Karp-Miller",
     "operatingSystem": [
         "Linux",
         "MacOS"
@@ -43,4 +43,3 @@
     "developmentStatus": "active",
     "issueTracker": "https://github.com/DmxLarchey/Kruskal-Fan/issues"
 }
-
