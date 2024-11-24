@@ -11,6 +11,8 @@
 
 # Kruskal-Fan
 
+This sub-project is part of the larger project `Coq-Kruskal` described here: https://github.com/DmxLarchey/Coq-Kruskal.
+
 This project is for Coq `8.14+` and is based on [`Kruskal-Trees`](https://github.com/DmxLarchey/Kruskal-Trees), 
 [`Kruskal-Finite`](https://github.com/DmxLarchey/Kruskal-Finite) 
 and [`Kruskal-AlmostFull`](https://github.com/DmxLarchey/Kruskal-AlmostFull), and
