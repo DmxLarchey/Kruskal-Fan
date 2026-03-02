@@ -1,4 +1,4 @@
-all: prop type
+all: type
 
 install: prop_install type_install
 

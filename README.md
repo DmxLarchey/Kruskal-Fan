@@ -50,3 +50,17 @@ Theorem af_konig X (R : rel₂ X) (P : nat → rel₁ X) :
 
 A `Type`-bounded variant of this lemma is used in the [constructive proof of decidability for implicational relevance logic](https://github.com/DmxLarchey/Relevant-decidability/tree/v2.0) and the `Prop`-bounded instance is used to establish the 
 termination of the computation of the [Friedman `TREE(n)`](https://github.com/DmxLarchey/Friedman-TREE) fast growing function.
+
+## A constructive subtitute for König's lemma (see [DLW 2025](https://doi.org/10.4230/LIPIcs.TYPES.2024.2))
+
+If `R` is an almost full relation and `P` is a sequence of finitary choices, then there is a 
+bound `m` (computable if `af` is `Type`-bounded) such that for any choice list `[x₁;...;xₙ]`,
+either it is shorter than `m` (ie `n < m`), or it contains a good pair (ie `R xᵢ xⱼ` for some `i < j`).
+In other words, bad choice lists have a bounded length.
+```coq
+Theorem af_konig_choice_list X (R : rel₂ X) (P : nat → rel₁ X) :
+      af R
+    → (∀ n : nat, fin (P n))
+    → ∃ₜ m, ∀l, choice_list P l → ⌊l⌋ < m ∨ good R (rev l).
+```
+where `choice_list P [x₀;...;xₙ]` is defined to mean `P₀ x₀ ∧ ... ∧ Pₙ xₙ`.
