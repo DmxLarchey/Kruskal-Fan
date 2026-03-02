@@ -93,4 +93,3 @@ Section FAN_theorem.
 
 End FAN_theorem.
 
-Check FAN_theorem.
