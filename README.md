@@ -51,7 +51,7 @@ Theorem af_konig X (R : rel₂ X) (P : nat → rel₁ X) :
 A `Type`-bounded variant of this lemma is used in the [constructive proof of decidability for implicational relevance logic](https://github.com/DmxLarchey/Relevant-decidability/tree/v2.0) and the `Prop`-bounded instance is used to establish the 
 termination of the computation of the [Friedman `TREE(n)`](https://github.com/DmxLarchey/Friedman-TREE) fast growing function.
 
-## A constructive subtitute for König's lemma (see [DLW 2025]())
+## A constructive subtitute for König's lemma (see [DLW 2025](https://doi.org/10.4230/LIPIcs.TYPES.2024.2))
 
 If `R` is an almost full relation and `P` is a sequence of finitary choices, then there is a 
 bound `m` (computable if `af` is `Type`-bounded) such that for any choice list `[x₁;...;xₙ]`,
