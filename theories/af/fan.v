@@ -21,8 +21,8 @@ Set Implicit Arguments.
 
 #[local] Hint Resolve Forall2_app in_eq in_cons : core.
 
-#[local] Notation monotone P := (∀ x l, P l → P (x::l)).
-#[local] Notation FAN lw := (λ c, Forall2 (λ x l, x ∈ l) c lw).
+#[local] Abbreviation monotone P := (∀ x l, P l → P (x::l)).
+#[local] Abbreviation FAN lw := (λ c, Forall2 (λ x l, x ∈ l) c lw).
 
 Section FAN_theorem.
 

@@ -71,7 +71,7 @@ Section pfx.
 
 End pfx.
 
-#[local] Notation FAN lc := (λ c, Forall2 (λ x l, x ∈ l) c lc).
+#[local] Abbreviation FAN lc := (λ c, Forall2 (λ x l, x ∈ l) c lc).
 
 Section choice_vec_list.
 
@@ -158,7 +158,7 @@ Section af_konig.
   (* P is the FAN of some function α : nat → list X *)
 
   Local Definition alpha n := proj1_sig (HP n).
-  Notation α := alpha.
+  Abbreviation α := alpha.
 
   (* α n : list X is the support of P n *)
   Local Fact alpha_spec n x : P n x ↔ x ∈ α n.

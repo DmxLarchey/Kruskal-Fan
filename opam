@@ -3,7 +3,8 @@ synopsis: "Extending Coq library for manipulating Almost Full relations with the
 description: """
    This library formalizes additional tools for AF relations, the FAN theorem for inductive bars
    and a constructive variant of König's lemma.
-"""  
+"""
+version: "2.2"  
 maintainer: ["Dominique Larchey-Wendling (https://github.com/DmxLarchey)"] 
 authors: "Dominique Larchey-Wendling (https://github.com/DmxLarchey)"
 license: "MPL-2.0"
@@ -21,6 +22,6 @@ install: [
 depends: [
   "coq-kruskal-trees" {}
   "coq-kruskal-finite" {}
-  "coq-kruskal-almostfull" {>= "2.0"}
+  "coq-kruskal-almostfull" {>= "2.2"}
 ]
 
